@@ -1,0 +1,332 @@
+{
+  "people": [
+    {
+      "id": 1,
+      "name": "Homer Simpson",
+      "callsign": "Donut",
+      "role": "Safety Inspector",
+      "unit": "Springfield Nuclear Plant",
+      "description": "Resident of Springfield with an uncanny ability to stumble into global events and somehow fix them.",
+      "image_url": "https://wallpapers.com/images/hd/homer-simpson-portrait-650c9n5a4fpapnzc.jpg",
+      "traits": [
+        "Impulsive",
+        "Lucky",
+        "Snack Driven"
+      ],
+      "proficiencies": [
+        "Accidental Espionage",
+        "Nuclear Console Button Handling"
+      ],
+      "dossier_notes": "Responds favorably to donuts and praise about his hair.",
+      "affiliation": "Springfield Tasking",
+      "stats": {
+        "affiliation": "Springfield Tasking",
+        "threat": "Low",
+        "loyalty": "Aligned"
+      },
+      "last_seen_notes": "Exited containment with a glowing donut box.",
+      "last_seen_lat": 39.7817,
+      "last_seen_lng": -89.6501,
+      "last_seen_timestamp": "2025-11-28T10:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "name": "SpongeBob SquarePants",
+      "callsign": "Bubbles",
+      "role": "Fry Cook / Eternal Optimist",
+      "unit": "Bikini Bottom Watch",
+      "description": "Porous operative capable of absorbing intel and enthusiasm in equal measure.",
+      "image_url": "https://i.pinimg.com/736x/2b/4f/5d/2b4f5d5accff0103ab67d23bf4b24ced.jpg",
+      "traits": [
+        "Cheerful",
+        "Absorbent",
+        "Persistent"
+      ],
+      "proficiencies": [
+        "Bubble Recon",
+        "Krabby Patty Logistics"
+      ],
+      "dossier_notes": "Motivation spikes when friends are in trouble.",
+      "affiliation": "Krusty Cell",
+      "stats": {
+        "affiliation": "Krusty Cell",
+        "threat": "Critical",
+        "loyalty": "Hostile"
+      },
+      "last_seen_notes": "Surfaced near a secret kelp silo humming the theme song.",
+      "last_seen_lat": 25.7906,
+      "last_seen_lng": -80.1303,
+      "last_seen_timestamp": "2025-11-19T04:20:46.518Z"
+    },
+    {
+      "id": 3,
+      "name": "Rick Sanchez",
+      "callsign": "C-137",
+      "role": "Multiversal Scientist",
+      "unit": "Smith Household Lab",
+      "description": "Brilliant and volatile scientist capable of opening portals and starting intergalactic incidents.",
+      "image_url": "https://images7.alphacoders.com/633/thumb-1920-633262.png",
+      "traits": [
+        "Genius",
+        "Cynical",
+        "Dimension Hopper"
+      ],
+      "proficiencies": [
+        "Portal Engineering",
+        "Improvised Weapons",
+        "Exo-Biology"
+      ],
+      "dossier_notes": "Will help if bribed with rare tech or good booze.",
+      "affiliation": "Council of Ricks",
+      "stats": {
+        "affiliation": "Council of Ricks",
+        "threat": "High",
+        "loyalty": "Unclear"
+      },
+      "last_seen_notes": "Opened a portal over Denver before disappearing.",
+      "last_seen_lat": 39.7392,
+      "last_seen_lng": -104.9903,
+      "last_seen_timestamp": "2025-11-27T22:15:00.000Z"
+    },
+    {
+      "id": 4,
+      "name": "Lara Croft",
+      "callsign": "Relic",
+      "role": "Archaeologist Adventurer",
+      "unit": "Croft Holdings",
+      "description": "Explorer who uncovers tombs and topples shadow cabals before breakfast.",
+      "image_url": "https://www.giantbomb.com/a/uploads/scale_small/0/1366/1800807-lara_croft.png",
+      "traits": [
+        "Resourceful",
+        "Fearless",
+        "Polyglot"
+      ],
+      "proficiencies": [
+        "Explosive Archaeology",
+        "Parkour",
+        "Ancient Scripts"
+      ],
+      "dossier_notes": "Provide new ruins or mysteries to secure her cooperation.",
+      "affiliation": "Guild of Adventurers",
+      "stats": {
+        "affiliation": "Guild of Adventurers",
+        "threat": "Medium",
+        "loyalty": "Aligned"
+      },
+      "last_seen_notes": "Tracked entering a ruin beneath Salisbury Plain.",
+      "last_seen_lat": 51.1789,
+      "last_seen_lng": -1.8262,
+      "last_seen_timestamp": "2025-11-27T18:05:00.000Z"
+    },
+    {
+      "id": 5,
+      "name": "Wonder Woman",
+      "callsign": "Aegis",
+      "role": "Ambassador & Warrior",
+      "unit": "Justice League",
+      "description": "Amazonian warrior who mediates conflicts with diplomacy before lassoing the truth.",
+      "image_url": "https://i.pinimg.com/1200x/af/61/ff/af61ff2a69ff943a26a1bd982694ced3.jpg",
+      "traits": [
+        "Principled",
+        "Diplomatic",
+        "Superhuman"
+      ],
+      "proficiencies": [
+        "Lasso of Truth",
+        "Shield Work",
+        "Airborne Combat"
+      ],
+      "dossier_notes": "Prefers transparent motives and humanitarian missions.",
+      "affiliation": "Themysciran Embassy",
+      "stats": {
+        "affiliation": "Themysciran Embassy",
+        "threat": "Medium",
+        "loyalty": "Aligned"
+      },
+      "last_seen_notes": "Escorted a peace convoy through DC airspace.",
+      "last_seen_lat": 38.9072,
+      "last_seen_lng": -77.0369,
+      "last_seen_timestamp": "2025-11-27T16:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "name": "T'Challa",
+      "callsign": "Panther",
+      "role": "Wakandan Monarch",
+      "unit": "Dora Milaje Command",
+      "description": "Tech-forward ruler balancing diplomacy with covert actions to protect Wakanda.",
+      "image_url": "https://i.pinimg.com/736x/96/61/7d/96617db2432dd34ab015e0c588efedc2.jpg",
+      "traits": [
+        "Strategic",
+        "Regal",
+        "Inventive"
+      ],
+      "proficiencies": [
+        "Vibranium Engineering",
+        "Stealth Ops",
+        "Hand-to-Hand"
+      ],
+      "dossier_notes": "All coordination must go through Wakandan channels.",
+      "affiliation": "Wakanda Outreach",
+      "stats": {
+        "affiliation": "Wakanda Outreach",
+        "threat": "Medium",
+        "loyalty": "Aligned"
+      },
+      "last_seen_notes": "Observed departing Kigali via cloaked transport.",
+      "last_seen_lat": -1.9441,
+      "last_seen_lng": 29.8739,
+      "last_seen_timestamp": "2025-11-26T21:45:00.000Z"
+    },
+    {
+      "id": 7,
+      "name": "Darth Vader",
+      "callsign": "Saber",
+      "role": "Sith Enforcer",
+      "unit": "Imperial Remnant",
+      "description": "Armored tactician wielding the Force to crush opposition and secure artifacts.",
+      "image_url": "https://wallpapers.com/images/hd/dark-darth-vader-star-wars-tablet-gp7se5myotp7mfhj.jpg",
+      "traits": [
+        "Relentless",
+        "Intimidating",
+        "Force-Sensitive"
+      ],
+      "proficiencies": [
+        "Lightsaber Combat",
+        "Telekinesis",
+        "Fear Tactics"
+      ],
+      "dossier_notes": "Negotiations strongly discouraged.",
+      "affiliation": "Imperial Vanguard",
+      "stats": {
+        "affiliation": "Imperial Vanguard",
+        "threat": "Critical",
+        "loyalty": "Hostile"
+      },
+      "last_seen_notes": "Meditated atop a Cairo high rise during sandstorm.",
+      "last_seen_lat": 30.0444,
+      "last_seen_lng": 31.2357,
+      "last_seen_timestamp": "2025-11-25T03:30:00.000Z"
+    },
+    {
+      "id": 8,
+      "name": "Sailor Moon",
+      "callsign": "Lunar Beacon",
+      "role": "Magical Guardian",
+      "unit": "Sailor Senshi",
+      "description": "Teen hero whose cosmic artifacts repel darkness and inspire allies.",
+      "image_url": "https://i.pinimg.com/1200x/f9/14/3b/f9143b97b3a57a3cc3719947a7ba3827.jpg",
+      "traits": [
+        "Hopeful",
+        "Empathic",
+        "Moon Powered"
+      ],
+      "proficiencies": [
+        "Moon Tiara Precision",
+        "Team Coordination"
+      ],
+      "dossier_notes": "Pancakes plus pep talks keep morale high.",
+      "affiliation": "Moon Kingdom Liaison",
+      "stats": {
+        "affiliation": "Moon Kingdom Liaison",
+        "threat": "Low",
+        "loyalty": "Aligned"
+      },
+      "last_seen_notes": "Energy spike recorded above Tokyo Tower.",
+      "last_seen_lat": 35.6762,
+      "last_seen_lng": 139.6503,
+      "last_seen_timestamp": "2025-11-28T12:00:00.000Z"
+    },
+    {
+      "id": 9,
+      "name": "Rick Grimes",
+      "callsign": "Sheriff",
+      "role": "Community Leader",
+      "unit": "Alexandria Safe-Zone",
+      "description": "Former sheriff's deputy turned survival tactician protecting scattered enclaves.",
+      "image_url": "https://i.pinimg.com/474x/2e/f8/eb/2ef8eb746154a3caa8c2d887a0d76ec0.jpg",
+      "traits": [
+        "Resolute",
+        "Strategic",
+        "Protective"
+      ],
+      "proficiencies": [
+        "Close-Quarters Combat",
+        "Resource Scouting",
+        "Diplomatic Intimidation"
+      ],
+      "dossier_notes": "Trust is earned slowly; frame requests around safeguarding his people.",
+      "affiliation": "Alexandria Coalition",
+      "stats": {
+        "affiliation": "Alexandria Coalition",
+        "threat": "Medium",
+        "loyalty": "Aligned"
+      },
+      "last_seen_notes": "Reinforced Hilltop perimeter before heading south with scouts.",
+      "last_seen_lat": 33.7488,
+      "last_seen_lng": -84.388,
+      "last_seen_timestamp": "2025-11-26T06:45:00.000Z"
+    },
+    {
+      "id": 10,
+      "name": "Geralt of Rivia",
+      "callsign": "White Wolf",
+      "role": "Monster Hunter",
+      "unit": "Wolf School Contingent",
+      "description": "Mutation-hardened tracker for hire who swaps bounties for favors when stakes are high.",
+      "image_url": "https://cdnb.artstation.com/p/assets/images/images/019/128/855/large/stephanie-woodward-stephanie-woodward-img-20190627-125202-368.jpg?1562140152",
+      "traits": [
+        "Stoic",
+        "Observant",
+        "Efficient"
+      ],
+      "proficiencies": [
+        "Swordsmanship",
+        "Alchemy",
+        "Tracking Signs"
+      ],
+      "dossier_notes": "Payment in rare alchemical ingredients unlocks cooperation.",
+      "affiliation": "Witcher Schools Accord",
+      "stats": {
+        "affiliation": "Witcher Schools Accord",
+        "threat": "Medium",
+        "loyalty": "Neutral"
+      },
+      "last_seen_notes": "Tracked foglet activity near Poznań before vanishing through a portal tear.",
+      "last_seen_lat": 52.4064,
+      "last_seen_lng": 16.9252,
+      "last_seen_timestamp": "2025-11-25T13:10:00.000Z"
+    },
+    {
+      "id": 11,
+      "name": "Katniss Everdeen",
+      "callsign": "Mockingjay",
+      "role": "Insurgent Strategist",
+      "unit": "District 13 Special Operations",
+      "description": "Marksman whose symbol ignites uprisings across authoritarian districts.",
+      "image_url": "https://64.media.tumblr.com/0f957e4ce306eac566353669b29e5040/tumblr_nqo9ta9LZj1ut64z5o1_500.jpg",
+      "traits": [
+        "Defiant",
+        "Resourceful",
+        "Protective"
+      ],
+      "proficiencies": [
+        "Archery",
+        "Survival Craft",
+        "Inspiring Broadcasts"
+      ],
+      "dossier_notes": "Guarantee civilian safety to gain immediate alignment.",
+      "affiliation": "Panem Resistance Network",
+      "stats": {
+        "affiliation": "Panem Resistance Network",
+        "threat": "High",
+        "loyalty": "Aligned"
+      },
+      "last_seen_notes": "Intercepted encrypted uplink from Rockies safe-house describing Capitol troop convoy.",
+      "last_seen_lat": 39.1911,
+      "last_seen_lng": -106.8175,
+      "last_seen_timestamp": "2025-11-24T23:55:00.000Z"
+    }
+  ],
+  "nextId": 12
+}

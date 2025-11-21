@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EYE OF SAURON</title>
+    <link
+      rel="icon"
+      type="image/gif"
+      href="https://i.pinimgproxy.com/?url=aHR0cHM6Ly9jZG4taWNvbnMtcG5nLmZsYXRpY29uLmNvbS8yNTYvMTg2MDcvMTg2MDc3MTAucG5n&ts=1763571336&sig=5e4f6c44a8ec9de4f17a36c5c9f4f695e76d96a4cf79051d346027901a641c99"
+    />
+    <link rel="stylesheet" href="/vendor/leaflet/leaflet.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Moody looping video to sell the surveillance cia hacker type vibe -->
+    <video class="background-video" autoplay muted loop playsinline>
+      <source src="eye-background.mp4" type="video/mp4" />
+      <source src="EyeBackground.mov" type="video/quicktime" />
+    </video>
+    <div class="scan-overlay" aria-hidden="true"></div>
+    <div class="app-shell">
+      <header class="command-header">
+        <div>
+          <p class="eyebrow">PERSON OF INTEREST DATABASE</p>
+          <h1>EYE OF SAURON</h1>
+        </div>
+      </header>
+
+      <main class="layout">
+        <!-- right rail lists every asset so you can hop between dossiers quickly -->
+        <section class="panel roster-panel">
+          <div class="panel-header">
+            <div class="panel-title">People of Interest</div>
+            <a class="primary-link" href="/add.html">+ Add Individual</a>
+          </div>
+          <div class="roster-search">
+            <input
+              type="search"
+              id="asset-search"
+              aria-label="Search individuals"
+            />
+          </div>
+          <div id="people-list" class="people-list"></div>
+        </section>
+
+        <!-- Main dossier view: once an asset is tapped, their intel fills this area -->
+        <section class="panel dossier-panel">
+          <div class="dossier-header">
+            <div class="photo-frame">
+              <img id="person-image" alt="Individual portrait" />
+            </div>
+            <div class="identity-block summary-layout">
+              <p class="label">Individual</p>
+              <h2 id="person-name"></h2>
+              <p class="callsign">
+                Nickname: <span id="person-callsign"></span>
+              </p>
+              <p class="role-line">
+                Role: <span id="person-role"></span>
+              </p>
+              <div class="stat-grid">
+                <div>
+                  <span>Profession</span>
+                  <strong id="stat-affiliation"></strong>
+                </div>
+                <div class="threat-cell">
+                  <span>Threat</span>
+                  <strong id="stat-threat" class="threat-badge"></strong>
+                </div>
+                <div>
+                  <span>Hostility</span>
+                  <strong id="stat-loyalty"></strong>
+                </div>
+                <div>
+                  <span>Workplace</span>
+                  <strong id="stat-workplace"></strong>
+                </div>
+              </div>
+              <div class="traits-row">
+                <div>
+                  <p class="label">Traits</p>
+                  <div id="traits-list" class="chip-grid"></div>
+                </div>
+                <div>
+                  <p class="label">Proficiencies</p>
+                  <div id="proficiencies-list" class="chip-grid"></div>
+                </div>
+              </div>
+              <div class="summary-row">
+                <div class="note-block">
+                  <p class="label">About</p>
+                  <p id="person-description"></p>
+                </div>
+                <div class="note-block">
+                  <p class="label">Individual Notes</p>
+                  <p id="person-notes"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map + last seen form share space in this intel row -->
+          <div class="intel-row">
+            <section class="card tracking-card full-span">
+              <header class="tracking-header">
+                <p class="timestamp" id="person-timestamp"></p>
+              </header>
+              <div id="map"></div>
+              <p class="label">Last Field Report</p>
+              <p id="field-notes" class="intel-note"></p>
+              <form id="update-last-seen-form" class="stacked-form">
+                <div class="two-col">
+                  <label>
+                    Latitude
+                    <input type="number" step="any" name="lat" required />
+                  </label>
+                  <label>
+                    Longitude
+                    <input type="number" step="any" name="lng" required />
+                  </label>
+                </div>
+                  <label>
+                    Field Notes
+                    <textarea name="notes" rows="2"></textarea>
+                  </label>
+                <button type="submit">Update Coordinates</button>
+              </form>
+            </section>
+          </div>
+
+          <!-- Collapsible editor lets cia agents tweak bios without leaving the page -->
+          <section class="profile-form-panel">
+            <button
+              type="button"
+              id="toggle-profile-form"
+              class="collapse-trigger"
+              aria-expanded="false"
+            >
+              <span>Update Profile</span>
+              <span class="chevron" aria-hidden="true"></span>
+            </button>
+            <div
+              id="profile-form-container"
+              class="profile-form-container collapsed"
+            >
+              <section class="card profile-form-card">
+                <header>
+                  <h3>Update Profile</h3>
+                </header>
+                <form id="update-profile-form" class="form-grid">
+                  <label>
+                    Name
+                    <input type="text" name="name" required />
+                  </label>
+                  <label>
+                    Nickname
+                    <input type="text" name="callsign" />
+                  </label>
+                  <label>
+                    Role
+                    <input type="text" name="role" />
+                  </label>
+                  <label>
+                    Workplace
+                    <input type="text" name="workplace" />
+                  </label>
+                  <label>
+                    Image URL
+                    <input type="url" name="image_url" />
+                  </label>
+                  <label>
+                    Profession
+                    <input
+                      type="text"
+                      name="affiliation"
+                    />
+                  </label>
+                  <label class="threat-select">
+                    Threat
+                    <select name="threat" id="edit-threat">
+                      <option value="Critical">Critical</option>
+                      <option value="High">High</option>
+                      <option value="Medium">Medium</option>
+                      <option value="Low">Low</option>
+                    </select>
+                  </label>
+                  <label>
+                    Hostility
+                    <select name="loyalty">
+                      <option value="Aligned">Aligned</option>
+                      <option value="Neutral">Neutral</option>
+                      <option value="Unclear">Unclear</option>
+                      <option value="Unknown" selected>Unknown</option>
+                      <option value="Hostile">Hostile</option>
+                    </select>
+                  </label>
+                  <label class="wide">
+                    Traits
+                    <input type="text" name="traits" />
+                  </label>
+                  <label class="wide">
+                    Proficiencies
+                    <input type="text" name="proficiencies" />
+                  </label>
+                  <label class="wide">
+                    About
+                    <textarea name="description" rows="2"></textarea>
+                  </label>
+                  <label class="wide">
+                    Individual Notes
+                    <textarea name="dossier_notes" rows="2"></textarea>
+                  </label>
+                  <button type="submit" class="wide">Save Profile</button>
+                </form>
+              </section>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <script src="/vendor/leaflet/leaflet.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EYE OF SAURON</title>
+    <link
+      rel="icon"
+      type="image/gif"
+      href="https://i.pinimgproxy.com/?url=aHR0cHM6Ly9jZG4taWNvbnMtcG5nLmZsYXRpY29uLmNvbS8yNTYvMTg2MDcvMTg2MDc3MTAucG5n&ts=1763571336&sig=5e4f6c44a8ec9de4f17a36c5c9f4f695e76d96a4cf79051d346027901a641c99"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="command-header has-back">
+        <a class="primary-link back-link" href="/" aria-label="Back to Console">
+          <span aria-hidden="true">←</span>
+        </a>
+        <div class="command-heading">
+          <p class="eyebrow">New individual profile</p>
+          <h1>Add Individual</h1>
+        </div>
+      </header>
+
+      <!-- Single-column form feels like a fresh mission intake sheet -->
+      <section class="panel form-panel">
+        <form id="add-person-form" class="form-grid">
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Nickname
+            <input type="text" name="callsign" />
+          </label>
+          <label>
+            Role
+            <input type="text" name="role" />
+          </label>
+          <label>
+            Workplace
+            <input type="text" name="workplace" />
+          </label>
+          <label>
+            Image URL
+            <input type="url" name="image_url" />
+          </label>
+          <label>
+            Profession
+            <input type="text" name="affiliation" />
+          </label>
+          <label>
+            Threat
+            <select name="threat">
+              <option value="Critical">Critical</option>
+              <option value="High">High</option>
+              <option value="Medium" selected>Medium</option>
+              <option value="Low">Low</option>
+            </select>
+          </label>
+          <label>
+            Hostility
+            <select name="loyalty">
+              <option value="Aligned">Aligned</option>
+              <option value="Neutral">Neutral</option>
+              <option value="Unclear">Unclear</option>
+              <option value="Unknown" selected>Unknown</option>
+              <option value="Hostile">Hostile</option>
+            </select>
+          </label>
+          <label class="wide">
+            Traits (comma separated)
+            <input type="text" name="traits" />
+          </label>
+          <label class="wide">
+            Proficiencies (comma separated)
+            <input type="text" name="proficiencies" />
+          </label>
+          <label class="wide">
+            About
+            <textarea name="description" rows="3"></textarea>
+          </label>
+          <label class="wide">
+            Individual Notes
+            <textarea name="dossier_notes" rows="3"></textarea>
+          </label>
+          <!-- Button launches the POST to create the new profile and redirects back to console -->
+          <button type="submit" class="wide">Save Individual</button>
+        </form>
+      </section>
+    </div>
+
+    <script src="add.js"></script>
+  </body>
+</html>
