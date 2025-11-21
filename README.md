@@ -1,4 +1,4 @@
-# Surveillance Application
+# Mock Surveillance Application
 
 A lightweight surveillance-tyle dashboard that renders animated dossiers, a Leaflet map, and REST endpoints so you can monitor fictional "people of interest" from the web. The demo has around 6,7 mock people of interest that you can view and edit to your discretion. Images may be out of date due to the fact they are not hosted in the githhub and instead image linked.
 
